@@ -1,9 +1,14 @@
-<div class="jumbotron">
-
-	<h1>Pins Project</h1>
-	<p>Welcome to my rails project
+<div class="jumbotron center">
+    <h1>Eric's Pins!</h1>
+    <% if user_signed_in? %>
+          # do something
+    <% else %>
+      <p>
 	 
 		<%=link_to "Sign Up", "#", class:"btn btn-primary btn-lg" %></p>
 
 		<%=link_to "Log In", "#", class:"btn btn-primary btn-lg" %></p>
+	</p>
+	<%end%>
 </div>	
+
